@@ -43,13 +43,7 @@ class EnrolledUser extends PotentialUser
 		$this -> class_name = $class_name;
 		$this -> class_subject = $class_subject;
 		$this -> instructor_name = $instructor_name;
-		$this -> username = $username;
-		$this -> fname = $fname;
-		$this -> lname = $lname;
-		$this -> password = $password;
-		$this -> pnumber = $pnumber;
-		$this -> email = $email;
-		$this -> phy_address = $phy_address;
+		parent::__construct($username, $fname, $lname, $password, $pnumber, $email, $phy_address);
 	}
 };
 
